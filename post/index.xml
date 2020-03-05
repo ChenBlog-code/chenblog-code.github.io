@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on My New Hugo Site</title>
+    <link>https://chenblog-code.github.io/post/</link>
+    <description>Recent content in Posts on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 05 Mar 2020 12:08:24 +0800</lastBuildDate>
+    
+	<atom:link href="https://chenblog-code.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>My First Testing Blog</title>
+      <link>https://chenblog-code.github.io/post/blog/</link>
+      <pubDate>Thu, 05 Mar 2020 12:08:24 +0800</pubDate>
+      
+      <guid>https://chenblog-code.github.io/post/blog/</guid>
+      <description>Letters in some of the SOS messages are altered by cosmic radiation during transmission. Given the signal received by Earth as a string,
+, determine how many letters of Sami&amp;rsquo;s SOS have been changed by radiation.
+For example, Earth receives SOSTOT. Sami&amp;rsquo;s original message was SOSSOS. Two of the message characters were changed in transit.
+Function Description
+Complete the marsExploration function in the editor below. It should return an integer representing the number of letters changed during transmission.</description>
+    </item>
+    
+  </channel>
+</rss>
