@@ -3,12 +3,17 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://chenblog-code.github.io/post/blog/</loc>
-    <lastmod>2020-03-05T12:08:24+08:00</lastmod>
+    <loc>https://chenblog-code.github.io/flask1_route/</loc>
+    <lastmod>2020-03-05T19:19:54+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://chenblog-code.github.io/</loc>
+    <lastmod>2020-03-05T19:19:54+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chenblog-code.github.io/post/blog/</loc>
     <lastmod>2020-03-05T12:08:24+08:00</lastmod>
   </url>
   

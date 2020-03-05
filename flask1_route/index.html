@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <title>Flask1_route // My New Hugo Site</title>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.57.2" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="John Doe" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="https://chenblog-code.github.io/css/main.min.61bb32028587f24ca28522d8d197970c7ef33284e5fffb45a75fcbbb2dbc4dcb.css" />
+
+    
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Flask1_route"/>
+<meta name="twitter:description" content="from flask import Flask app =Flask(__name__) @app.route(&#39;/test/&#39;) def test(): return &quot;this is test route&quot; #pass one param : 127.0.0.1:5001/arg/baichen/ @app.route(&#39;/arg/&lt;name&gt;/&#39;) def arg(name): return &quot;hello &quot;&#43;name #pass many params @app.route(&#39;/arg/&lt;name&gt;/&lt;age&gt;/&#39;) @app.route(&#39;/arg/&lt;name&gt;_&lt;age&gt;/&#39;) def args(name,age): return &quot;Name: {} Age: {}&quot;.format(name,age) if __name__ == &#39;__main__&#39;: app.run(port=5001,debug=True)  url :
+ 127.0.0.1/test/ 127.0.0.1/arg/chen/ 127.0.0.1:5000/arg/chen/10/ 127.0.0.1:5000/arg/chen_10/  Param type:
+#type of param @app.route(&#39;/test/&lt;name&gt;/&#39;) def test(name): print(type(name)) # it is string type return &quot;testing type of param&quot; if __name__ == &#39;__main__&#39;: app."/>
+
+    <meta property="og:title" content="Flask1_route" />
+<meta property="og:description" content="from flask import Flask app =Flask(__name__) @app.route(&#39;/test/&#39;) def test(): return &quot;this is test route&quot; #pass one param : 127.0.0.1:5001/arg/baichen/ @app.route(&#39;/arg/&lt;name&gt;/&#39;) def arg(name): return &quot;hello &quot;&#43;name #pass many params @app.route(&#39;/arg/&lt;name&gt;/&lt;age&gt;/&#39;) @app.route(&#39;/arg/&lt;name&gt;_&lt;age&gt;/&#39;) def args(name,age): return &quot;Name: {} Age: {}&quot;.format(name,age) if __name__ == &#39;__main__&#39;: app.run(port=5001,debug=True)  url :
+ 127.0.0.1/test/ 127.0.0.1/arg/chen/ 127.0.0.1:5000/arg/chen/10/ 127.0.0.1:5000/arg/chen_10/  Param type:
+#type of param @app.route(&#39;/test/&lt;name&gt;/&#39;) def test(name): print(type(name)) # it is string type return &quot;testing type of param&quot; if __name__ == &#39;__main__&#39;: app." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://chenblog-code.github.io/flask1_route/" />
+<meta property="article:published_time" content="2020-03-05T19:19:54+08:00" />
+<meta property="article:modified_time" content="2020-03-05T19:19:54+08:00" />
+
+
+  </head>
+  <body>
+    <header class="app-header">
+      <a href="https://chenblog-code.github.io/"><img class="app-header-avatar" src="/avatar.jpg" alt="John Doe" /></a>
+      <h1>My New Hugo Site</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vehicula turpis sit amet elit pretium.</p>
+      <div class="app-header-social">
+        
+      </div>
+    </header>
+    <main class="app-container">
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class ="post-title">Flask1_route</h1>
+      <div class="post-meta">
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar">
+  <title>calendar</title>
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
+</svg>
+          Mar 5, 2020
+        </div>
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
+  <title>clock</title>
+  <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+</svg>
+          1 min read
+        </div></div>
+    </header>
+    <div class="post-content">
+      <pre><code class="language-python">from flask import Flask
+
+app =Flask(__name__)
+
+@app.route('/test/')
+def test():
+    return &quot;this is test route&quot;
+
+#pass one param  : 127.0.0.1:5001/arg/baichen/
+@app.route('/arg/&lt;name&gt;/')
+def arg(name):
+    return &quot;hello &quot;+name
+
+#pass many params
+@app.route('/arg/&lt;name&gt;/&lt;age&gt;/')
+@app.route('/arg/&lt;name&gt;_&lt;age&gt;/')
+def args(name,age):
+    return &quot;Name: {} Age: {}&quot;.format(name,age)
+
+if __name__ == '__main__':
+    app.run(port=5001,debug=True)
+</code></pre>
+
+<p>url :</p>
+
+<ul>
+<li>127.0.0.1/test/</li>
+<li>127.0.0.1/arg/chen/</li>
+<li>127.0.0.1:5000/arg/chen/10/</li>
+<li>127.0.0.1:5000/arg/chen_10/</li>
+</ul>
+
+<p>Param type:</p>
+
+<pre><code class="language-python">#type of param
+@app.route('/test/&lt;name&gt;/')
+def test(name):
+    print(type(name))    # it is string type
+    return &quot;testing type of param&quot;
+
+if __name__ == '__main__':
+    app.run(port=5001,debug=True)
+</code></pre>
+
+<p>Default : name is string type</p>
+
+<p>url: <a href="http://127.0.0.1:5001/test/chen/">http://127.0.0.1:5001/test/chen/</a></p>
+
+<p>Limit the arg type to be integer:</p>
+
+<pre><code class="language-python">#type of param
+@app.route('/test/&lt;int:arg&gt;/')  #Limit the arg type to be integer:
+def test(arg):
+    print(type(arg))    # it is int
+    return &quot;testing type of param&quot;
+
+if __name__ == '__main__':
+    app.run(port=5001,debug=True)
+</code></pre>
+
+<p>url: <a href="http://127.0.0.1:5001/test/10/">http://127.0.0.1:5001/test/10/</a></p>
+
+<p>Float:</p>
+
+<pre><code class="language-python">#type of param :float
+@app.route('/test/&lt;float:arg&gt;/')
+def test(arg):
+    print(type(arg))    # it is float
+    return &quot;testing type of param&quot;
+
+if __name__ == '__main__':
+    app.run(port=5001,debug=True)
+</code></pre>
+
+<p>url: <a href="http://127.0.0.1:5001/test/1.2/">http://127.0.0.1:5001/test/1.2/</a></p>
+
+<p>Path:   arg &ldquo;a/b/c/&rdquo;</p>
+
+<pre><code class="language-python">#type of param: path is a string
+@app.route('/test/&lt;path:arg&gt;/')
+def test(arg):
+    print(type(arg))
+    print(arg)
+    return &quot;testing type of param&quot;
+
+if __name__ == '__main__':
+    app.run(port=5001,debug=True)
+</code></pre>
+
+<p>url:    <a href="http://127.0.0.1:5001/test/a/b/c/">http://127.0.0.1:5001/test/a/b/c/</a></p>
+
+<p>​           <a href="http://127.0.0.1:5001/test/lucky/18/man/">http://127.0.0.1:5001/test/lucky/18/man/</a></p>
+
+    </div>
+    <div class="post-footer">
+      
+    </div>
+  </article>
+
+    </main>
+  </body>
+</html>
